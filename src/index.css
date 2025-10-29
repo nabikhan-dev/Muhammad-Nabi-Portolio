@@ -1,0 +1,103 @@
+/* ✅ All imports must be at the very top */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@import "tailwindcss";
+
+/* ✅ Then your custom CSS below */
+:root {
+  --primary: #000610;
+  --accent: #00ff84;
+  --heading: #ffffff;
+  --description: #cfcfcf;
+  --input: #b1b2b3;
+  --card: #5b5b5b;
+  --background: #0b0d0f;
+  font-family: "Inter", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* Backgrounds */
+.bg-primary { background-color: var(--primary); }
+.bg-card { background-color: var(--card); }
+
+/* Text colors */
+.text-heading { color: var(--heading); }
+.text-desc { color: var(--description); }
+.text-accent { color: var(--accent); }
+
+/* Borders */
+.border-input { border-color: var(--input); }
+
+/* Hover effects */
+.hover\:text-accent:hover { color: var(--accent); }
+.hover\:bg-accent:hover { background-color: var(--accent); }
+
+/* Transitions */
+* {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+
+
+
+.blinking-circle, .blinking-circle::before {
+  content: " ";
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  transition: all 0.3s;
+  background-color: #00ff84;
+}
+
+.blinking-circle::before {
+  animation: blink 2s infinite;
+  position: absolute;
+  background-color: #00ff84
+}
+
+@keyframes blink {
+  50%   {
+    transform: scale(2);
+    opacity: 0
+  }
+  100%   {
+    transform: scale(2);
+    opacity: 0
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+@keyframes pulseSlow {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.85;
+  }
+}
+
+.animate-rotate-slow {
+  animation: rotate linear infinite;
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-pulse-slow {
+  animation: pulseSlow 4s ease-in-out infinite;
+}
