@@ -26,7 +26,7 @@ const WorkProcessSection = () => {
 
   return (
     <motion.section
-      className="relative py-28 overflow-hidden bg-gradient-to-b from-gray-950 via-gray-900 to-slate-950"
+      className="relative py-10 sm:py-16 md:py-20 overflow-hidden bg-gradient-to-b from-gray-950 via-gray-900 to-slate-950"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1 }}
@@ -61,14 +61,12 @@ const WorkProcessSection = () => {
 
       {/* === Section Title === */}
       <motion.h2
-        className="text-center mb-20 font-extrabold text-transparent text-3xl sm:text-3xl 
-        bg-clip-text bg-gradient-to-r from-cyan-300 via-blue-400 to-purple-500 
-        animate-gradient-x drop-shadow-[0_0_20px_rgba(34,211,238,0.5)]"
+        className="text-center mb-10 md:mb-20 bg-gradient-to-br from-cyan-200 to-blue-400 bg-clip-text text-transparent text-2xl sm:text-3xl font-bold"
         initial={{ opacity: 0, y: -50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
       >
-       My Creative Work Process
+      Behind the Build
       </motion.h2>
 
       {/* === Process Steps === */}

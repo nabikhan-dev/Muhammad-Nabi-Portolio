@@ -90,12 +90,12 @@ const TechSection = () => {
                     viewport={{ once: true }}
                 >
                     <motion.h3
-                        className="text-3xl font-bold text-cyan-300"
+                        className="bg-gradient-to-br from-cyan-200 to-blue-400 bg-clip-text text-transparent text-2xl sm:text-3xl font-bold "
                         initial={{ y: -20, opacity: 0 }}
                         whileInView={{ y: 0, opacity: 1 }}
                         transition={{ delay: 0.2, duration: 0.8 }}
                     >
-                        My Tech Stack
+                      Tools & Technologies
                     </motion.h3>
 
                     <motion.p

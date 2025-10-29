@@ -24,7 +24,7 @@ const ProjectSection = () => {
 
   return (
     <motion.section
-      className="relative py-28 overflow-hidden"
+      className="relative overflow-hidden py-10 sm:py-16 md:py-20"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1 }}
@@ -52,12 +52,12 @@ const ProjectSection = () => {
       {/* === CONTENT === */}
       <div className="relative w-[90%] max-w-7xl mx-auto">
         <motion.h2
-          className="text-center mb-20 bg-gradient-to-br from-cyan-200 to-blue-400 bg-clip-text text-transparent text-2xl sm:text-3xl font-bold"
+          className="text-center mb-10 md:mb-20 bg-gradient-to-br from-cyan-200 to-blue-400 bg-clip-text text-transparent text-2xl sm:text-3xl font-bold"
           initial={{ opacity: 0, y: -80 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
         >
-          Every Project Tells a Story
+       Some of My Favorite Work
         </motion.h2>
 
         {/* === PROJECT GRID === */}

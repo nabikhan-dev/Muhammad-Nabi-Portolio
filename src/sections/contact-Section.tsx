@@ -52,7 +52,7 @@ const ContactSection = () => {
   return (
     <section
       id="contact"
-      className="relative py-28 bg-gradient-to-b from-gray-950 via-gray-900 to-gray-950 overflow-hidden"
+      className="relative py-10 sm:py-16 md:py-20 bg-gradient-to-b from-gray-950 via-gray-900 to-gray-950 overflow-hidden"
     >
       {/* 🌈 Floating Lights */}
       <div className="absolute inset-0 -z-10 overflow-hidden">
@@ -81,12 +81,12 @@ const ContactSection = () => {
       {/* 📬 Contact Info */}
       <div className="relative w-[90%] max-w-5xl mx-auto text-center space-y-12">
         <motion.h2
-          className="text-center mb-20 bg-gradient-to-br from-cyan-200 to-blue-400 bg-clip-text text-transparent text-2xl sm:text-4xl font-bold"
+          className="text-center mb-10 md:mb-20 bg-gradient-to-br from-cyan-200 to-blue-400 bg-clip-text text-transparent text-2xl sm:text-3xl font-bold"
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
         >
-          Let’s Connect
+          Reach Out Anytime
         </motion.h2>
 
         <motion.p
