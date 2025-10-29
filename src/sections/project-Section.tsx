@@ -24,7 +24,7 @@ const ProjectSection = () => {
 
   return (
     <motion.section
-      className="relative overflow-hidden py-10 sm:py-16 md:py-20"
+      className="relative  py-10 sm:py-16 md:py-20"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1 }}
