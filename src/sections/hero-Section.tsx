@@ -80,7 +80,7 @@ const HeroSection = () => {
 
         {/* Button */}
         <motion.a
-          href="https://drive.google.com/file/d/1_rd09FJ-oBWWBgypOhWUrGaOVeh8AKxv/view?usp=sharing"
+          href="https://docs.google.com/document/d/1h3A4OdAcsr4Rj-G1SdZ6MPQLktStL_SMFVaRDaViBQQ/edit?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
           style={{ border, boxShadow }}
